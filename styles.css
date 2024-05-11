@@ -1,0 +1,161 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f5f5f5; /* Light gray background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Use a readable sans-serif font */
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1000px; /* Increased max-width */
+  height: auto; /* Adjusted height to auto */
+  margin: 50px auto; /* Center the container horizontally */
+  background-color: #fff; /* White background */
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+}
+
+.container .left-side {
+  position: relative;
+  background-color: #4d390c; /* Dark brown background */
+  padding: 40px;
+}
+
+.profiletxt {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #1a1405; /* Dark brown border */
+}
+
+.profiletxt .image-box {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profiletxt .image-box img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profiletxt h2 {
+  color: #fff; /* White text */
+  font-size: 25px;
+  text-transform: capitalize;
+  text-align: center;
+  line-height: 30px;
+}
+
+.profiletxt h2 span {
+  font-size: 20px;
+  font-weight: 300;
+  color: #f8c291; /* Light orange */
+}
+
+.contactinfo {
+  padding-top: 40px;
+  font-size: 20px;
+  border-bottom: 2px solid #1a1405; /* Dark brown border */
+}
+
+.title {
+  color: #f8c291; /* Light orange */
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.contactinfo ul {
+  position: relative;
+}
+
+.contactinfo ul li {
+  position: relative;
+  margin: 10px 0;
+  color: #333; /* Dark gray text */
+  font-size: 20px;
+  list-style: none;
+}
+
+.contactinfo ul li .identification {
+  display: inline-block;
+  font-size: 20px;
+  color: #f8c291; /* Light orange */
+}
+
+.contactinfo ul li span {
+  font-size: 20px;
+  color: #fff; /* White text */
+}
+
+.contactinfo.education h5 {
+  color: #f8c291; /* Light orange */
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.contactinfo.education h4 {
+  color: #fff; /* White text */
+  font-weight: 500;
+}
+
+.container .right-side {
+  position: relative;
+  background-color: #fff; /* White background */
+  padding: 40px;
+}
+
+.about {
+  margin-bottom: 50px;
+  text-align: justify;
+  padding: 20px;
+  letter-spacing: 2px;
+}
+
+.title2 {
+  color: #4d390c; /* Dark brown */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+}
+
+.about ul li {
+  letter-spacing: 2px;
+  padding: 5px;
+  font-size: 20px;
+  color: #4d390c; /* Dark brown */
+}
+
+p {
+  padding: 5px;
+  color: #4d390c; /* Dark brown */
+  font-size: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    padding: auto;
+  }
+  .body {
+    padding: auto;
+  }
+}
